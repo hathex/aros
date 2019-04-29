@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallerWrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallertWrapper ul.gallery {
+    list-style: none;
+}
+
+.gallerWrapper ul li {
+    position: relative;
+    height: 100%;
+}
+
+.gallerWrapper ul li img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.gallerWrapper ul li figure {}
+
+li.last {
+    background-color: dimgray;
+}
+
+
+#maja1{
+    z-index: 100000;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 20%;
+    color: black;
+    font-size: 50px;
+    border-bottom: solid 1px black;
+}
+
+#maja2{
+    z-index: 1000;
+    position: absolute;
+    margin-left: 44%;
+    margin-top: 25%;
+    font-size: 30px;
+    color: black;
+    font-family: cursive;
+}
+
+ul.direction {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.direction .fas {
+    font-weight: 900;
+    font-size: 3em;
+    color: burlywood;
+}
+
+
+#navbar {
+    width: 70px;
+    background-color: #555;
+/*    overflow: auto;*/
+/*    position: absolute;*/
+    z-index: 100;
+    top: 300px;
+    position: fixed;
+    right: 0;
+}
+
+#navbar a {
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 5px;
+    width: 70px;
+}
+
+#navbar a:hover {
+    background-color: darkred;
+}
+
+.active {
+    background-color: darkred;
+}
+
+
+iframe{
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.info{
+    padding-top: 585px;
+}
+
+ul i{
+    padding: 5px;
+    font-size: 40px;
+    margin: 5px
+}
+
+.over {
+    display: flex;
+    border-bottom: solid 2px black;
+    justify-content: space-between;
+}
+
+.under {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.f4{
+    white-space: pre;
+}
+
+
+/*animation left and right*/
+.gallerWrapper ul.gallery.left {
+    animation: left 1s;
+    animation-fill-mode: forwards;
+}
+
+.gallerWrapper ul.gallery.right {
+    animation: right 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left {
+    0% {
+        transform: translate3d(0, 0, 0px);
+    }
+
+    100% {
+        transform: translate3d(0, -33.33%, 0);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translate3d(0, -33.33%, 0px);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width 800px){
+    .galleryWrapper{
+        -ms-flex 50%;
+        flex 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width 600px){
+    .galleryWrapper{
+        -ms-flex 100%;
+        flex 100%;
+        max-width: 100%;
+    }
+}

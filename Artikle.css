@@ -1,0 +1,164 @@
+html{
+    background-color: black;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+/*content*/
+#wrapper #content{
+    background-color: black;
+    background: url(Arosbilleder/art2.gif) no-repeat 0 -400px;
+    padding-right: 100px;
+    min-height: 400px;
+
+}
+#wrapper #content h1{
+    color: aliceblue;
+    padding-left: 250px;
+      margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+    padding-bottom: 300px
+}
+#wrapper #content h2{
+    color: aliceblue;
+    padding-bottom: 40px;
+    padding-left: 150px
+}
+#wrapper #content h2:hover{
+    color:#32CD32;
+}
+.hidden-show{
+    clear: both;
+    color: aliceblue;
+    padding-left: 550px;
+     font-size:20px;
+}
+#wrapper #content img{
+    height: 100%;
+    width: 100%;
+}
+/*
+p{
+    color: aliceblue;
+    font-size:20px;
+    border-bottom: 5px solid red;
+      background: #4CAF50;
+  padding: 15px;
+  width: 50%;
+    overflow: hidden;
+  border: 1px solid #ccc;
+    margin-left: 500px;
+}
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*nav bar*/
+.navbar {
+    width: 55px;
+    background-color: #555;
+    overflow: auto;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 55px;
+}
+
+.navbar a:hover {
+    background-color: darkred;
+}
+
+.active {
+    background-color: darkred;
+}
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+/*footer*/
+#wrapper footer{
+    background-color: #555;
+    width: 100%;
+      padding:20px;
+
+  color:#ffffff;
+  display: flex;
+/*    footer social*/
+}
+/*
+.social-icons{
+    width: 50%;
+}
+footer .social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+footer .social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #32CD32;
+}
+footer .social-icons ul li a{
+    color: #272727;
+    font-size: 25px;
+}
+footer .social-icons ul li a i{
+    line-height: 50px;
+    
+}
+.maps{
+    width: 50%;
+}
+*/
+/*@media only screen and (min-width: 600px) {*/
+  /* For tablets: */
+/*
+  #wrapper {width: 8.33%;}
+  #wrapper {width: 16.66%;}
+  #wrapper {width: 25%;}
+  #wrapper {width: 33.33%;}
+  #wrapper {width: 41.66%;}
+  #wrapper {width: 50%;}
+  #wrapper {width: 58.33%;}
+  #wrapper {width: 66.66%;}
+  #wrapper {width: 75%;}
+  #wrapper {width: 83.33%;}
+  #wrapper {width: 91.66%;}
+  #wrapper {width: 100%;}
+}
+*/
+/*@media only screen and (min-width: 768px) {*/
+  /* For desktop: */
+/*
+  #wrapper {width: 8.33%;}
+  #wrapper {width: 16.66%;}
+  #wrapper {width: 25%;}
+  #wrapper {width: 33.33%;}
+  #wrapper {width: 41.66%;}
+  #wrapper {width: 50%;}
+  #wrapper {width: 58.33%;}
+  #wrapper {width: 66.66%;}
+  #wrapper {width: 75%;}
+  #wrapper {width: 83.33%;}
+  #wrapper {width: 91.66%;}
+  #wrapper {width: 100%;}
+}*/

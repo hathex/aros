@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 55px;
+    background-color: #555;
+    overflow: auto;
+    position: absolute;
+    z-index: 100;
+    margin-top: 12%;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 30px;
+}
+
+.navbar a:hover {
+    background-color: darkred;
+}
+
+.active {
+    background-color: darkred;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+h1 {
+    color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+footer{
+    
+}
+
+
+body,html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../Aros-billeder/forside.jpg");
+
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
